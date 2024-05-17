@@ -1,0 +1,60 @@
+.container{
+    .statistic{
+        width: 100%;
+        min-height: 323px;
+        margin-top: -162px;
+        background: $white;
+        border-radius: 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        @include df();
+        .statistic__block{
+            width: 90%;
+            height: 167px;
+            @include dfc(start, center);
+            gap: 79px;
+        }
+        .statistic__subtitle{
+            width: 100%;
+            height: auto;
+            @include dfc(center, center);
+            span{
+                font-size: $size-24;
+                font-weight: 600;
+                line-height: 22px;
+                color: $main-color;
+            }
+        }
+        .statistic__wrapper{
+            width: 100%;
+            height: auto;
+            @include df(space-between, start);
+            .statistic__card{
+                width: 150px;
+                height: 66px;
+                @include dfc(start, start);
+                gap: 25px;
+                // border: 1px solid red;
+                .statistic__card__desc{
+                    width: 100%;
+                    text-align: center;
+                    p{
+                        font-size: $size-48;
+                        color: $main-color;
+                        font-weight: 600;
+                        line-height: 22px;
+                    }
+                }
+                .statistic__card__text{
+                    width: 100%;
+                    text-align: center;
+                    p{
+                        font-size: $size-18;
+                        font-weight: 400;
+                        line-height: 22px;
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}
